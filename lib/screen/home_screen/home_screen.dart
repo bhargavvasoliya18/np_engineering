@@ -361,6 +361,7 @@ class HomeTab extends StatelessWidget {
                   child: CustomCard(
                     padding: const EdgeInsets.all(16),
                     onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (_)=> AddExpenseScreen()));
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(content: Text('Add Expense')),
                       );
